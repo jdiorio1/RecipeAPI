@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<RecipeContext>(opt =>
-    opt.UseInMemoryDatabase("RecipeAPI"));
+builder.Services.AddDbContext<RecipeContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("RecipeContext")));
 
 builder.Services.AddEndpointsApiExplorer();
 
