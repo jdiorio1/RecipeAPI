@@ -13,5 +13,9 @@ namespace RecipeAPI.Models
         public DbSet<Instruction> Instructions { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Recipe_Ingredient> Recipe_Ingredients { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Recipe_Ingredient>().HasKey(ri => new { ri.RecipeId, ri.IngredientId });
+        }
     }
 }
