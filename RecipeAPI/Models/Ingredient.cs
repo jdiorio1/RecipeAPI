@@ -1,8 +1,8 @@
 ﻿namespace RecipeAPI.Models
 {
-    public class Recipe_Ingredient
+    public class Ingredient
     {
-        public int RecipeID { get; set; }
         public int IngredientID { get; set; }
+        public string IngredientName { get; set; }        
     }
 }
