@@ -10,8 +10,8 @@ namespace RecipeAPI.Models
         {
         }
         public DbSet<Recipe> Recipes { get; set; } = null!;
-        public DbSet<Instructions> Steps { get; set; }
+        public DbSet<Instruction> Instructions { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<Recipe_Ingredient> Recipe_Ingredients{get; set;}
+        public DbSet<Recipe_Ingredient> Recipe_Ingredients { get; set; }
     }
 }
