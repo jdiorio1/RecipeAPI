@@ -1,9 +1,10 @@
 ﻿namespace RecipeAPI.Models
 {
-    public class Instructions
+    public class Instruction
     {
-        public int InstructionsId { get; set; }
-        public Dictionary<int, string> Steps { get; set; }
+        public int InstructionId { get; set; }
+        public int InstructionNumber { get; set; }
+        public string InstructionDescription { get; set; }
         public int RecipeId { get; set; }
     }
 }
