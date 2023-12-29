@@ -2,7 +2,7 @@
 {
     public class Recipe
     {
-        public int RecipeID { get; set; }
+        public int RecipeId { get; set; }
         public DateTime DateAdded { get; set; }
         public string? Source { get; set; }
         public string? Name { get; set; }

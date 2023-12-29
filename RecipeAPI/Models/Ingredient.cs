@@ -2,7 +2,7 @@
 {
     public class Ingredient
     {
-        public int IngredientID { get; set; }
+        public int IngredientId { get; set; }
         public string IngredientName { get; set; }        
     }
 }
